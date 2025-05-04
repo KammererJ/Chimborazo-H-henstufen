@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+  <Document>
+    <name>Klimazonenroute bis Chimborazo-Gipfel</name>
+    <description>Route durch alle Höhenstufen bis zum höchsten Punkt des Chimborazo</description>
+
+    <!-- Tierra caliente -->
+    <Placemark>
+      <name>Tierra caliente (~750 m)</name>
+      <description>Amazonasvorland – tropisch, feucht, viel Vegetation</description>
+      <Point>
+        <coordinates>-77.9550,-1.8380,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <!-- Tierra templada -->
+    <Placemark>
+      <name>Tierra templada (~1.600 m)</name>
+      <description>Feuchtwarm, Übergang zur Andenregion</description>
+      <Point>
+        <coordinates>-78.2500,-1.7200,0</coordinates>
+      </Point>
+    </Placemark>
+
+<!-- Tierra fría -->
+<Placemark>
+  <name>Tierra fría (~3.250 m)</name>
+  <description>Zwischen Colta und Cajabamba – typische Nebelwaldzone und Hochebene</description>
+  <Point>
+    <coordinates>-78.7486,-1.7744,0</coordinates>
+  </Point>
+</Placemark>
+
+    <!-- Tierra helada -->
+    <Placemark>
+      <name>Tierra helada (~4.300 m)</name>
+      <description>Páramo – kalte Graslandschaft, kaum noch Vegetation</description>
+      <Point>
+        <coordinates>-78.6930,-1.5380,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <!-- Tierra nevada -->
+    <Placemark>
+      <name>Tierra nevada (~5.050 m)</name>
+      <description>Schneegrenze unterhalb des Chimborazo</description>
+      <Point>
+        <coordinates>-78.7455,-1.4830,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <!-- Chimborazo-Gipfel -->
+    <Placemark>
+      <name>Gipfel des Chimborazo (6.263 m)</name>
+      <description>Höchster Punkt des Chimborazo – ewiges Eis</description>
+      <Point>
+        <coordinates>-78.8160,-1.4692,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <!-- Route als Linie -->
+    <Placemark>
+      <name>Route durch alle Klimazonen bis zum Gipfel</name>
+      <Style>
+        <LineStyle>
+          <color>ff0000ff</color>
+          <width>3</width>
+        </LineStyle>
+      </Style>
+      <LineString>
+        <tessellate>1</tessellate>
+        <altitudeMode>clampToGround</altitudeMode>
+      <coordinates>
+  -77.9550,-1.8380,0  <!-- Tierra caliente -->
+  -78.2500,-1.7200,0  <!-- Tierra templada -->
+  -78.7486,-1.7744,0  <!-- NEUE Tierra fría -->
+  -78.6930,-1.5380,0  <!-- Tierra helada -->
+  -78.7455,-1.4830,0  <!-- Tierra nevada -->
+  -78.8160,-1.4692,0  <!-- Chimborazo-Gipfel -->
+</coordinates>
+      </LineString>
+    </Placemark>
+
+  </Document>
+</kml>
